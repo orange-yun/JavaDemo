@@ -1,0 +1,26 @@
+POST http://localhost:3333/api/musics
+Content-Type: application/json
+
+{
+  "title": "music title from api gateway",
+  "description": "music description from gateway",
+  "releasedate": "2020-06-30 08:30:23"
+}
+
+###
+GET http://localhost:3333/api/musics/{{musicId}}/status
+
+###
+PUT http://localhost:3333/api/musics/publish/{{musicId}}
+
+###
+POST http://localhost:3333/api/publishings
+Content-Type: application/json
+
+{
+  "code": "printf('Dream It Possible');",
+  "music": "{{musicId}}"
+}
+
+###
+GET http://localhost:3333/api/publishings

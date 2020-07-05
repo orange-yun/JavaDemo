@@ -1,0 +1,14 @@
+POST http://localhost:3307/musics
+Content-Type: application/json
+
+{
+  "title": "string",
+  "description": "string",
+  "releasedate": "2020-06-16 08:32:23"
+}
+
+###
+GET http://localhost:3307/musics/0845dfd7-ff80-4ac1-98c7-3864f0470686/status
+
+###
+PUT http://localhost:3307/musics/publish/72aec62c-3a5c-49a2-86ce-ff012787119a
